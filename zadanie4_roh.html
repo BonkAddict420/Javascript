@@ -1,0 +1,63 @@
+<html>
+<head>
+    <script type="text/javascript">
+        function okno_zamknij_rohde() {
+            window.close();
+        }
+    </script>
+</head>
+<body>
+    <h2><b>1) Kiedy powstał JavaScript (podaj datę)</b></h2>
+    JavaScript powstał w 1995 roku
+
+    <h2><b>2) Dlaczego jest to język skryptowy?</b></h2>
+    Ponieważ jest wykonywany linia po linii, bez potrzeby wcześniejszej kompilacji do pliku binarnego.
+
+    <h2><b>3) Gdzie jest wykonywany JS (klient lub serwer)?</b></h2>
+    Tradycyjnie JavaScript działał po stronie klienta (przeglądarka), ale dzięki technologii Node.js działa również po stronie serwera.
+
+    <h2><b>4) Dlaczego JS to bezpieczne narzędzie?</b></h2>
+    Ponieważ kod JS w przeglądarce działa w tzw. sandboxie, nie ma bezpośredniego dostępu do plików użytkownika ani systemu operacyjnego.
+
+    <h2><b>5) Czy jest to język obiektowy, jeśli tak to dlaczego?</b></h2>
+    Tak, ponieważ obsługuje obiekty, prototypy i pozwala programować obiektowo.
+
+    <h2><b>6) Wymień zalety JS:</b></h2>
+    Zaleta1 – działa w każdej przeglądarce bez dodatkowych instalacji.<br>
+    Zaleta2 – jest łatwy do nauki i integracji z HTML i CSS.<br>
+    Zaleta3 – pozwala tworzyć dynamiczne i interaktywne strony internetowe.<br>
+
+    <h2><b>7) Framework to:</b></h2>
+    To zbiór gotowych bibliotek i narzędzi ułatwiających tworzenie aplikacji.
+
+    <h2><b>8) Do aplikacji mobilnych można użyć Framework</b></h2>
+    Tak, np. React Native, Ionic czy Flutter pozwalają tworzyć aplikacje mobilne w JS.
+
+    <h2><b>9) Aplikacje responsywne to:</b></h2>
+    Strony, które automatycznie dostosowują się do różnych rozdzielczości ekranów (komputer, tablet, telefon).
+
+    <h2><b>10) Przepisz linie kodu pod nimi wytłumaczenie jak działa ten fragment kodu</b></h2>
+    <p>&lsaquo;input type="button" name="przycisk" value="Nowa Strona" onclick="WinOpen(' ')"&rsaquo;</p>
+    Tworzy przycisk, który po kliknięciu wywołuje funkcję WinOpen i otwiera nowe okno.
+
+    <h2><b>11) Przepisz linie kody pod nimi wytłumaczenie jak działa ta ten fragment kodu</b></h2>
+    window.open("obraz.html","okienko","toolbar=no,directories=no,menubar=no,height=280,width=160,top=200,left=200");<br>
+    To polecenie otwiera nowe okno przeglądarki z plikiem `obraz.html` i ustawia jego parametry:<br>
+    toolbar=no → ukrywa pasek narzędzi<br>
+    directories=no → ukrywa przyciski katalogów<br>
+    menubar=no → ukrywa menu<br>
+    height=280 → wysokość okna w pikselach<br>
+    width=160 → szerokość okna w pikselach<br>
+    top=200 → odległość od górnej krawędzi ekranu<br>
+    left=200 → odległość od lewej krawędzi ekranu<br>
+
+    <h2><b>12) Opisz następującą instrukcję window.close()</b></h2>
+    Polecenie zamyka aktualnie otwarte okno przeglądarki, w którym działa skrypt.<br>
+    <br>
+    Można je zapisać w kodzie, ale do wyświetlania samej instrukcji bez uruchamiania służą encje HTML:<br>
+    &lsaquo;window.close()&rsaquo;  
+
+    <br><br>
+    <input type="button" value="zamknij okno" onclick="okno_zamknij_rohde()"/>
+</body>
+</html>
