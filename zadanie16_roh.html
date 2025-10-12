@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <div style="color:navy; font-size:60px;">
+        <script language="JavaScript">
+            var A_roh = prompt("Podaj pierwszą liczbę (A_roh):", "");
+            var B_roh = prompt("Podaj drugą liczbę (B_roh):", "");
+
+            var A = parseFloat(A_roh);
+            var B = parseFloat(B_roh);
+
+            var wynik = (A + B) ** 3;
+            var cz1 = A ** 3;
+            var cz2 = 3 * (A ** 2) * B;
+            var cz3 = 3 * A * (B ** 2);
+            var cz4 = B ** 3;
+
+            document.write("Wczytane liczby: A=" + A + "  B=" + B + "<br><br>");
+            document.write("(" + A + " + " + B + ")³ = " + A + "³ + 3*(" + A + "²)*" + B + " + 3*" + A + "*(" + B + "²) + " + B + "³<br><br>");
+            document.write("= " + cz1 + " + " + cz2 + " + " + cz3 + " + " + cz4 + " = " + wynik);
+        </script>
+    </div>
+</body>
+</html>

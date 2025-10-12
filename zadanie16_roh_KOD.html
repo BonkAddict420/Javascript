@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 16 - KOD</title>
+</head>
+<body style="font-family: monospace; background-color: #f0f0f0; padding: 20px;">
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="pl"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Zadanie 16 - Sterowanie wydrukami&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div style="color:navy; font-size:60px;"&gt;
+        &lt;script language="JavaScript"&gt;
+        // Adam Rohde 3F 12.10.2025
+        // Zadanie 16
+            var A_roh = prompt("Podaj pierwszą liczbę (A_roh):", "");
+            var B_roh = prompt("Podaj drugą liczbę (B_roh):", "");
+
+            var A = parseFloat(A_roh);
+            var B = parseFloat(B_roh);
+
+            var wynik = (A + B) ** 3;
+            var cz1 = A ** 3;
+            var cz2 = 3 * (A ** 2) * B;
+            var cz3 = 3 * A * (B ** 2);
+            var cz4 = B ** 3;
+
+            document.write("Wczytane liczby: A=" + A + "  B=" + B + "<br><br>");
+            document.write("(" + A + " + " + B + ")³ = " + A + "³ + 3*(" + A + "²)*" + B + " + 3*" + A + "*(" + B + "²) + " + B + "³<br><br>");
+            document.write("= " + cz1 + " + " + cz2 + " + " + cz3 + " + " + cz4 + " = " + wynik);
+        &lt;/script&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+</body>
+</html>

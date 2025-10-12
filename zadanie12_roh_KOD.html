@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 12 - KOD</title>
+</head>
+<body style="font-family: monospace; background-color: #f0f0f0; padding: 20px;">
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="pl"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Zadanie 12 - Ile sekund&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div style="color:green; font-size:55px;"&gt;
+        &lt;script language="JavaScript"&gt;
+        // Adam Rohde 3F 12.10.2025
+        // Zadanie 12
+            var D1_roh = prompt("Data1=", "");
+            var G1_roh = prompt("Godzina1=", "");
+            var D2_roh = prompt("Data2=", "");
+            var G2_roh = prompt("Godzina2=", "");
+
+            var d1 = parseFloat(D1_roh);
+            var g1 = parseFloat(G1_roh);
+            var d2 = parseFloat(D2_roh);
+            var g2 = parseFloat(G2_roh);
+
+            var sekund = ((d1 * 24 + g1) - (d2 * 24 + g2)) * 60 * 60;
+
+            document.write("Ilość sekund między dniami " + d1 + " godz. " + g1 +
+                           " i dniem " + d2 + " godz. " + g2 + " = " + sekund + " sekund");
+        &lt;/script&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+</body>
+</html>
