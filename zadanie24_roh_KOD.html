@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="pl"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;script&gt;
+        var x1_roh = parseFloat(prompt("Podaj x1:"));
+        var x2_roh = parseFloat(prompt("Podaj x2:"));
+        var x1_rad = x1_roh * Math.PI / 180;
+        var y1_roh = 3 * Math.pow(x1_roh, 4 / 6);
+        var y2_roh = 2 * Math.cos(x1_rad) + 3 * Math.sin(x1_rad);
+        var y3_roh = Math.cbrt(Math.pow(x1_roh, 5) + 2 * Math.pow(x2_roh, 4)) * Math.abs(x1_roh - x2_roh);
+
+        document.write("x1 = " + x1_roh + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; x2 = " + x2_roh + "&lt;br&gt;");
+        document.write("x1 = " + x1_roh + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; x1 = " + x1_rad.toFixed(2) + "&lt;br&gt;");
+        document.write("y1 = " + y1_roh.toFixed(2) + "&lt;br&gt;");
+        document.write("y2 = " + y2_roh.toFixed(2) + "&lt;br&gt;");
+        document.write("y3 = " + y3_roh.toFixed(2) + "&lt;br&gt;");
+    &lt;/script&gt;
+&lt;/head&gt;
+
+&lt;body style="background-color: lightgray; color: blue; font-size: 24px;"&gt;&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+</body>
+</html>

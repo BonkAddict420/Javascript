@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <script>
+        function Pole_kowalski(a_kow, b_kow) {
+            var pole = parseFloat(a_kow) * parseFloat(b_kow);
+            document.getElementById("wyprowadz_pole_kow").value = pole.toFixed(2);
+        }
+
+        function obwod_kowalski(a_kow, b_kow) {
+            var obw = 2 * parseFloat(a_kow) + 2 * parseFloat(b_kow);
+            document.getElementById("wyprowadz_obwod_kow").value = obw.toFixed(2);
+        }
+    </script>
+</head>
+<body>
+<form onsubmit="Pole_kowalski(this.a_dana_kow.value, this.b_dana_kow.value); obwod_kowalski(this.a_dana_kow.value, this.b_dana_kow.value); return false;">
+    Podaj a: <input type="text" name="a_dana_kow"><br><br>
+    Podaj b: <input type="text" name="b_dana_kow"><br><br>
+    <input type="submit" value="Oblicz"><br><br>
+
+    <table border="1" cellpadding="8">
+        <tr>
+            <td>Wynik pola</td>
+            <td><input type="text" id="wyprowadz_pole_kow" name="pole" readonly></td>
+        </tr>
+        <tr>
+            <td>Wynik obwodu</td>
+            <td><input type="text" id="wyprowadz_obwod_kow" name="obw" readonly></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

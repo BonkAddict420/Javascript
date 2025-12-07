@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Użycie funkcji</title>
+</head>
+
+<body>
+    <div style="color:navy;font-size:30px;">
+
+        <script>
+            var a = parseFloat(prompt("a=", ""));
+            var b = parseFloat(prompt("b=", ""));
+
+            function suma_roh(a, b) {
+                return a + b;
+            }
+
+            function odejmowanie_roh(a, b) {
+                return a - b;
+            }
+
+            function mnozenie_roh(a, b) {
+                return a * b;
+            }
+
+            function od_kwadratu_roh(a, b) {
+                var pierwszy = a * a;
+                var drugi = b * b;
+                return "Pierwszy: " + pierwszy + "<br>Drugi: " + drugi;
+            }
+
+            function reszta_z_dzielenia_a_przez_b_roh(a, b) {
+                return a % b;
+            }
+
+            document.write("Suma = " + suma_roh(a, b) + "<br>");
+            document.write("Odejmowanie = " + odejmowanie_roh(a, b) + "<br>");
+            document.write("Mnozenie = " + mnozenie_roh(a, b) + "<br>");
+            document.write("Kwadraty:<br>" + od_kwadratu_roh(a, b) + "<br>");
+            document.write("Reszta z dzielenia = " + reszta_z_dzielenia_a_przez_b_roh(a, b) + "<br>");
+        </script>
+
+    </div>
+</body>
+</html>

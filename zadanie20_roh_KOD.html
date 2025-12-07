@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="pl"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;h2 style="color:navy;"&gt;Obliczanie długości boków trójkąta&lt;/h2&gt;
+
+    &lt;script&gt;
+        var xa_roh = parseFloat(prompt("Podaj xa_roh", ""));
+        var ya_roh = parseFloat(prompt("Podaj ya_roh", ""));
+        var xb_roh = parseFloat(prompt("Podaj xb_roh", ""));
+        var yb_roh = parseFloat(prompt("Podaj yb_roh", ""));
+        var xc_roh = parseFloat(prompt("Podaj xc_roh", ""));
+        var yc_roh = parseFloat(prompt("Podaj yc_roh", ""));
+
+        function AB_roh(xa_roh, ya_roh, xb_roh, yb_roh) {
+            return Math.sqrt(Math.pow(xa_roh - xb_roh, 2) + Math.pow(ya_roh - yb_roh, 2));
+        }
+
+        function BC_roh(xb_roh, yb_roh, xc_roh, yc_roh) {
+            return Math.sqrt(Math.pow(xb_roh - xc_roh, 2) + Math.pow(yb_roh - yc_roh, 2));
+        }
+
+        function AC_roh(xa_roh, ya_roh, xc_roh, yc_roh) {
+            return Math.sqrt(Math.pow(xa_roh - xc_roh, 2) + Math.pow(ya_roh - yc_roh, 2));
+        }
+
+        document.write("&lt;h3&gt;Wyniki:&lt;/h3&gt;");
+        document.write("Długość boku AB = " + AB_roh(xa_roh, ya_roh, xb_roh, yb_roh) + "&lt;br&gt;");
+        document.write("Długość boku BC = " + BC_roh(xb_roh, yb_roh, xc_roh, yc_roh) + "&lt;br&gt;");
+        document.write("Długość boku AC = " + AC_roh(xa_roh, ya_roh, xc_roh, yc_roh) + "&lt;br&gt;");
+    &lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="pl"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;script&gt;
+        function Pole_kowalski(a_kow, b_kow) {
+            var pole = parseFloat(a_kow) * parseFloat(b_kow);
+            document.getElementById("wyprowadz_pole_kow").value = pole.toFixed(2);
+        }
+
+        function obwod_kowalski(a_kow, b_kow) {
+            var obw = 2 * parseFloat(a_kow) + 2 * parseFloat(b_kow);
+            document.getElementById("wyprowadz_obwod_kow").value = obw.toFixed(2);
+        }
+    &lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;form onsubmit="Pole_kowalski(this.a_dana_kow.value, this.b_dana_kow.value); obwod_kowalski(this.a_dana_kow.value, this.b_dana_kow.value); return false;"&gt;
+    Podaj a: &lt;input type="text" name="a_dana_kow"&gt;&lt;br&gt;&lt;br&gt;
+    Podaj b: &lt;input type="text" name="b_dana_kow"&gt;&lt;br&gt;&lt;br&gt;
+    &lt;input type="submit" value="Oblicz"&gt;&lt;br&gt;&lt;br&gt;
+
+    &lt;table border="1" cellpadding="8"&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Wynik pola&lt;/td&gt;
+            &lt;td&gt;&lt;input type="text" id="wyprowadz_pole_kow" name="pole" readonly&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Wynik obwodu&lt;/td&gt;
+            &lt;td&gt;&lt;input type="text" id="wyprowadz_obwod_kow" name="obw" readonly&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/table&gt;
+&lt;/form&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+</body>
+</html>
