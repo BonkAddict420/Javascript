@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+
+<pre>
+&lt;script type="text/javascript"&gt;
+    function Mebel(rodzaj, material, kolor, producent) {
+        this.rodzaj = rodzaj;
+        this.material = material;
+        this.kolor = kolor;
+        this.producent = producent;
+    }
+
+    Mebel.prototype.Mebel_info = function () {
+        document.write("Obiekt: Mebel<br>");
+        document.write("Pola: rodzaj, material, kolor, producent<br>");
+        document.write("Metoda prototype: Mebel_info<br>");
+        document.write("Dane: " + this.rodzaj + ", " + this.material + ", " + this.kolor + ", " + this.producent + "<br><br>");
+    };
+
+    var m1 = new Mebel("krzesło", "drewno", "brązowy", "Ikea");
+    var m2 = new Mebel("stół", "metal", "czarny", "Agata");
+    var m3 = new Mebel("szafa", "płyta", "biały", "BlackRedWhite");
+
+    Mebel.prototype.cena = 500;
+
+    Mebel.prototype.Mebel_pokaz_rohde = function () {
+        document.write("Nowe pole poza konstruktorem: cena<br>");
+        document.write("Nowa metoda poza konstruktorem: Mebel_pokaz_rohde<br>");
+        document.write("Cena: " + this.cena + " zł<br><br>");
+    };
+
+    m1.Mebel_info();
+    m2.Mebel_info();
+    m3.Mebel_info();
+
+    document.write("Dostęp do pól obiektów:<br>");
+    document.write(m1.rodzaj + " " + m1.kolor + "<br>");
+    document.write(m2.rodzaj + " " + m2.kolor + "<br>");
+    document.write(m3.rodzaj + " " + m3.kolor + "<br><br>");
+
+    m1.Mebel_pokaz_rohde();
+&lt;/script&gt;
+</pre>
+
+</body>
+</html>

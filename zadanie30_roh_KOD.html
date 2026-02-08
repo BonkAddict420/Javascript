@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+<pre>
+&lt;script type="text/javascript"&gt;
+    var Mebel = {
+        rodzaj: "krzesło",
+        material: "drewno",
+        kolor: "brązowy",
+
+        Mebel_wyswietl_rohde: function() {
+            document.write("Nazwa obiektu: Mebel&lt;br&gt;");
+            document.write("Pola: rodzaj, material, kolor&lt;br&gt;");
+            document.write("Metoda: Mebel_wyswietl_rohde&lt;br&gt;&lt;br&gt;");
+
+            document.write("Wartości pól:&lt;br&gt;");
+            document.write("rodzaj: " + this.rodzaj + "&lt;br&gt;");
+            document.write("material: " + this.material + "&lt;br&gt;");
+            document.write("kolor: " + this.kolor + "&lt;br&gt;");
+        }
+    };
+
+    Mebel.Mebel_wyswietl_rohde();
+&lt;/script&gt;
+</pre>
+</body>
+</html>

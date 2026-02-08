@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <pre>
+    &lt;script type="text/javascript"&gt;
+        var Mebel = {
+            rodzaj: "krzesło",
+            material: "drewno",
+            kolor: "brązowy",
+
+            Mebel_wyswietl_rohde: function() {
+                document.write("Nazwa obiektu: Mebel&lt;br&gt;");
+                document.write("Pola w obiekcie: rodzaj, material, kolor&lt;br&gt;");
+                document.write("Metoda w obiekcie: Mebel_wyswietl_rohde&lt;br&gt;&lt;br&gt;");
+            }
+        };
+
+        Mebel.cena = 350;
+
+        Mebel.Mebel_pokaz_rohde = function() {
+            document.write("Nowe pole poza ciałem obiektu: cena&lt;br&gt;");
+            document.write("Nowa metoda poza ciałem obiektu: Mebel_pokaz_rohde&lt;br&gt;&lt;br&gt;");
+            document.write("Wartość pola cena: " + this.cena + " zł&lt;br&gt;");
+        };
+
+        Mebel.Mebel_wyswietl_rohde();
+        Mebel.Mebel_pokaz_rohde();
+    &lt;/script&gt;
+    </pre>
+</body>
+</html>

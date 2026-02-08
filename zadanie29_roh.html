@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <h1>1. W jaki sposób można określić właściwość danego obiektu. Dwa sposoby wraz z przykładami</h1>
+    <h2>Pierwszy sposób to zapis z kropką: nazwaObiektu.właściwość = wartość</h2>
+    <h2>Przykład: auto.marka = "Opel"; auto.rok = 1996;</h2>
+    <h2>Drugi sposób to zapis z nawiasami kwadratowymi: nazwaObiektu["właściwość"] = wartość</h2>
+    <h2>Przykład: auto["cena"] = 25000;</h2>
+
+    <h1>2. W jaki sposób można odwołać się do pól właściwości i metod</h1>
+    <h2>Odwołujemy się przez nazwę obiektu oraz kropkę przed nazwą właściwości lub metody.</h2>
+    <h2>Przykład: console.log(samochod1.kolor);</h2>
+    <h2>Przykład metody: samochod1.pokaz();</h2>
+
+    <h1>3. Wymień cechy charakterystyczne konstruktora</h1>
+    <h2>Konstruktor jest uruchamiany automatycznie podczas tworzenia obiektu. Ma taką samą nazwę jak funkcja konstruktora. Nie zwraca wartości. Może przyjmować argumenty. Służy do inicjalizacji pól obiektu i współpracuje z operatorem new.</h2>
+
+    <h1>4. Konstruowanie obiektu na podstawie przykładu. Obiekt ma trzy pola oraz jedną metodę</h1>
+    <h2>Przykład obiektu z trzema polami i jedną metodą:</h2>
+    <h2>
+        var osoba = {<br>
+        nazwisko: "Kowalski",<br>
+        imie: "Jan",<br>
+        zawod: "piekarz",<br>
+        wyswietl: function() { document.write(this.nazwisko + " " + this.imie); }<br>
+        }
+    </h2>
+
+    <h1>5. Znaczenie słowa this. Jak oddzielamy pola oraz metody</h1>
+    <h2>Słowo this pozwala odwołać się do bieżącego obiektu z jego wnętrza, czyli do jego pól i metod. Pola i metody w definicji obiektu oddzielamy przecinkami.</h2>
+
+    <h1>6. Konstruktor w JS na podstawie przykładu wraz z opisem</h1>
+    <h2>Konstruktor w JavaScript to zwykła funkcja używana do tworzenia obiektów. Przypisuje wartości do pól przy użyciu słowa this.</h2>
+    <h2>
+        function Klient(nazwisko, imie, zawod) {<br>
+        this.nazwisko = nazwisko;<br>
+        this.imie = imie;<br>
+        this.zawod = zawod;<br>
+        this.wypisz = function() { alert(this.nazwisko + " " + this.imie); }<br>
+        }
+    </h2>
+    <h2>Podczas tworzenia obiektu wartości parametrów trafiają do pól nowego obiektu.</h2>
+
+    <h1>7. Znaczenie słowa kluczowego new wraz z przykładem</h1>
+    <h2>Słowo new tworzy nowy obiekt na podstawie funkcji konstruktora.</h2>
+    <h2>Przykład:</h2>
+    <h2>
+        var osoba1 = new Klient("Kowalski","Jan","kierowca");<br>
+        var osoba2 = new Klient("Nowak","Anna","sekretarka");
+    </h2>
+    <h2>Powstają dwa niezależne obiekty z tymi samymi polami i metodami.</h2>
+
+    <h1>8. Znaczenie słowa kluczowego prototype wraz z przykładem i opisem</h1>
+    <h2>Prototype służy do dodawania metod i właściwości do wszystkich obiektów tworzonych przez dany konstruktor.</h2>
+    <h2>Przykład:</h2>
+    <h2>
+        function Klient() {<br>
+        this.nazwisko = "Bielski";<br>
+        this.imie = "Paweł";<br>
+        }<br>
+        Klient.prototype.pisz = function() { document.write(this.nazwisko + " " + this.imie); };<br>
+        Klient.prototype.zawod = "kierowca";<br>
+        var o1 = new Klient();<br>
+        o1.pisz();
+    </h2>
+    <h2>Metody i pola dodane przez prototype są dostępne dla każdego nowego obiektu utworzonego z tego konstruktora oraz mogą być dodawane także do już istniejących obiektów.</h2>
+</body>
+</html>
