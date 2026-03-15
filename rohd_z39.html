@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <title>Rohde Z39_JS</title>
+    </head>
+
+    <body>
+        <h1 style="color:green;">MENU</h1>
+        <br>
+        <h2 style="color:red">1-CZERWONY</h2>
+        <h2 style="color:blue">2-NIEBIESKI</h2>
+
+        <input type="button" name="nazwisko_ucznia" value="Oblicz" onclick="fun_roh()" />
+
+        <script>
+            function fun_roh() {
+                var x_roh = prompt("Podaj kolor", "");
+
+                if (x_roh == "1" || x_roh.toLowerCase() == "czerwony") {
+                    document.write('<h1 style="color:red">wczytałeś kolor czerwony</h1><br />');
+                }
+                else if (x_roh == "2" || x_roh.toLowerCase() == "niebieski") {
+                    document.write('<h6 style="color:blue">wczytałeś kolor niebieski</h6><br />');
+                }
+            }
+        </script>
+    </body>
+</html>
+
+<!-- Rohde Z39_JS -->

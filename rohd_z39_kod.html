@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <title>Rohde Z39_KOD</title>
+    </head>
+
+    <body>
+        <pre>
+            &lt;!DOCTYPE html&gt;
+            &lt;html lang="pl"&gt;
+                &lt;head&gt;
+                    &lt;meta charset="UTF-8"&gt;
+                    &lt;title&gt;Rohde Z39_JS&lt;/title&gt;
+                &lt;/head&gt;
+
+                &lt;body&gt;
+                    &lt;h1 style="color:green;"&gt;MENU&lt;/h1&gt;
+                    &lt;br&gt;
+                    &lt;h2 style="color:red"&gt;1-CZERWONY&lt;/h2&gt;
+                    &lt;h2 style="color:blue"&gt;2-NIEBIESKI&lt;/h2&gt;
+
+                    &lt;input type="button" name="nazwisko_ucznia" value="Oblicz" onclick="fun_roh()" /&gt;
+
+                    &lt;script&gt;
+                        function fun_roh() {
+                            var x_roh = prompt("Podaj kolor", "");
+
+                            if (x_roh == "1" || x_roh.toLowerCase() == "czerwony") {
+                                document.write('&lt;h1 style="color:red"&gt;wczytałeś kolor czerwony&lt;/h1&gt;&lt;br /&gt;');
+                            }
+                            else if (x_roh == "2" || x_roh.toLowerCase() == "niebieski") {
+                                document.write('&lt;h6 style="color:blue"&gt;wczytałeś kolor niebieski&lt;/h6&gt;&lt;br /&gt;');
+                            }
+                        }
+                    &lt;/script&gt;
+                &lt;/body&gt;
+            &lt;/html&gt;
+        </pre>
+    </body>
+</html>
+
+<!-- Rohde Z39_KOD -->

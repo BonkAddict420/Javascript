@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <title>Rohde Z38_KOD_e2</title>
+    </head>
+
+    <body>
+        <pre>
+            &lt;!DOCTYPE html&gt;
+            &lt;html lang="pl"&gt;
+                &lt;head&gt;
+                    &lt;meta charset="UTF-8"&gt;
+                    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                    &lt;title&gt;Rohde Z38_JS_e2&lt;/title&gt;
+
+                    &lt;style&gt;
+                        #demo_rohde {
+                            color: red;
+                            font-size: 40px;
+                        }
+                    &lt;/style&gt;
+
+                &lt;/head&gt;
+
+                &lt;body&gt;
+                    &lt;div style="color: red;font-size: 1cm;"&gt;Rohde (1 cm)&lt;/div&gt;&lt;br&gt;
+                    &lt;div style="color: green;font-size: 12mm;"&gt;Pojęcie rozdzielczość ekranu/monitora oznacza liczbę pikseli, które mogą być wyświetlane na ekranie monitora w poziomie i pionie, np. 1920x1080 oznacza 1920 pikseli szerokości i 1080 wysokości (12 mm)&lt;/div&gt;&lt;br&gt;
+                    &lt;div style="color: blue;font-size: 50px;"&gt;Pojęcie szerokość/wysokość ekranu przeglądarki w pikselach oznacza aktualny rozmiar okna przeglądarki internetowej widoczny dla strony WWW, czyli obszar w którym wyświetla się strona bez pasków narzędzi (50 px)&lt;/div&gt;&lt;br&gt;
+
+                    &lt;p id="demo_rohde"&gt;&lt;/p&gt;
+
+                    &lt;script&gt;
+                        var w = window.innerWidth;
+                        var h = window.innerHeight;
+                        var x = document.getElementById("demo_rohde");
+                        x.innerHTML = "szerokość przeglądarki: " + w + ", wysokość: " + h + ".";
+                    &lt;/script&gt;
+                &lt;/body&gt;
+            &lt;/html&gt;
+        </pre>
+    </body>
+</html>
+
+<!-- Rohde Z38_KOD_e2 -->

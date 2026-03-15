@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <title>Rohde Z41_JS</title>
+        <style>
+            h1 {
+                text-transform: uppercase;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Proste działania</h1>
+        <br><br>
+        <h2>Rohde klasa 3F</h2>
+        <label for="a">Podaj pierwszą liczbę:</label>
+        <input type="number" id="a">
+        <br><br>
+        <label for="b">Podaj drugą liczbę:</label>
+        <input type="number" id="b">
+        <br><br>
+        <input type="button" value="DODAWANIE" onclick="suma_roh()">
+        <input type="button" value="ODEJMOWANIE" onclick="roznica_roh()">
+        <input type="button" value="MNOŻENIE" onclick="iloczyn_roh()">
+        <input type="button" value="DZIELENIE" onclick="iloraz_roh()">
+        <input type="button" value="TEORIA-Rohde" onclick="teoria_roh()">
+        <div id="wynik" style="margin-top:20px;"></div>
+
+        <script>
+            function suma_roh() {
+                var a = document.getElementById("a").value;
+                var b = document.getElementById("b").value;
+
+                if (a == "" || b == "") {
+                    document.getElementById("wynik").innerHTML = "Proszę uzupełnić obie liczby.";
+                }
+                else {
+                    a = parseFloat(a);
+                    b = parseFloat(b);
+                    var suma = a + b;
+                    document.getElementById("wynik").innerHTML = "Wynik działania wynosi: " + suma;
+                }
+            }
+
+            function roznica_roh() {
+                var a = document.getElementById("a").value;
+                var b = document.getElementById("b").value;
+
+                if (a == "" || b == "") {
+                    document.getElementById("wynik").innerHTML = "Proszę uzupełnić obie liczby.";
+                }
+                else {
+                    a = parseFloat(a);
+                    b = parseFloat(b);
+                    var roznica = a - b;
+                    document.getElementById("wynik").innerHTML = "Wynik działania wynosi: " + roznica;
+                }
+            }
+
+            function iloczyn_roh() {
+                var a = document.getElementById("a").value;
+                var b = document.getElementById("b").value;
+
+                if (a == "" || b == "") {
+                    document.getElementById("wynik").innerHTML = "Proszę uzupełnić obie liczby.";
+                }
+                else {
+                    a = parseFloat(a);
+                    b = parseFloat(b);
+                    var iloczyn = a * b;
+                    document.getElementById("wynik").innerHTML = "Wynik działania wynosi: " + iloczyn;
+                }
+            }
+
+            function iloraz_roh() {
+                var a = document.getElementById("a").value;
+                var b = document.getElementById("b").value;
+
+                if (a == "" || b == "") {
+                    document.getElementById("wynik").innerHTML = "Proszę uzupełnić obie liczby.";
+                }
+                else {
+                    a = parseFloat(a);
+                    b = parseFloat(b);
+                    if (b == 0) {
+                        document.getElementById("wynik").innerHTML = "Nie wolno dzielić przez zero.";
+                    }
+                    else {
+                        var iloraz = a / b;
+                        document.getElementById("wynik").innerHTML = "Wynik działania wynosi: " + iloraz;
+                    }
+                }
+            }
+
+            function teoria_roh() {
+                document.write("<font color=green size=4>Pierwsza linia kodu</font><br>");
+                document.write("<font color=red size=4>&lt;label for=&quot;a&quot;&gt;Podaj pierwszą liczbę:&lt;/label&gt; &lt;input type=&quot;number&quot; id=&quot;a&quot;&gt;</font><br>");
+                document.write("<font color=green size=4>Tworzy etykietę i pole do wpisania liczby.</font><br><br>");
+
+                document.write("<font color=green size=4>Druga linia kodu</font><br>");
+                document.write("<font color=red size=4>&lt;input type=&quot;button&quot; value=&quot;DODAWANIE&quot; onclick=&quot;suma_roh()&quot;&gt;</font><br>");
+                document.write("<font color=green size=4>Tworzy przycisk DODAWANIE który uruchamia funkcję suma_roh().</font><br><br>");
+
+                document.write("<font color=green size=4>Trzecia linia kodu</font><br>");
+                document.write("<font color=red size=4>var a = document.getElementById(&quot;a&quot;).value;</font><br>");
+                document.write("<font color=green size=4>Pobiera wartość z pola o id 'a'.</font><br><br>");
+
+                document.write("<font color=green size=4>Czwarta linia kodu</font><br>");
+                document.write("<font color=red size=4>if (a == \"\" || b == \"\")</font><br>");
+                document.write("<font color=green size=4>Sprawdza czy pola a lub b są puste.</font><br><br>");
+
+                document.write("<font color=green size=4>Piąta linia kodu</font><br>");
+                document.write("<font color=red size=4>document.getElementById(\"wynik\").innerHTML = \"Wynik działania wynosi:\" + suma;</font><br>");
+                document.write("<font color=green size=4>Wyświetla wynik działania na stronie.</font><br><br>");
+            }
+        </script>
+    </body>
+</html>
+
+<!-- Rohde Z40_JS -->
