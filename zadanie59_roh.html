@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <title>Zadanie 59</title>
+    </head>
+
+    <body>
+        <div style="color:red;font-size:30px;">
+            <script language="JavaScript">
+                var numer_roh = 22;
+                var count_roh = 0;
+                for (i_roh = numer_roh; i_roh <= numer_roh + 15; i_roh++) {
+                    var pierw2_roh = Math.sqrt(i_roh);
+                    var pierw4_roh = Math.sqrt(pierw2_roh);
+                    document.write("I=" + i_roh + "<br>");
+                    document.write("pierw_2(" + i_roh + ")=" + pierw2_roh.toFixed(2) + "<br>");
+                    document.write("pierw_4(" + i_roh + ")=" + pierw4_roh.toFixed(2) + "<br>");
+                    count_roh++;
+                }
+            </script>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <title>Zadanie 54</title>
+    </head>
+
+    <body>
+        <script language="JavaScript">
+            var a_roh = 6;
+            var b_roh = 24;
+
+            var linia_roh = "";
+            for (i_roh = 1; i_roh <= b_roh; i_roh++) linia_roh += "*";
+            document.write(linia_roh + "<br>");
+
+            for (i_roh = 1; i_roh <= (a_roh - 2); i_roh++) {
+                var wiersz_roh = "*";
+                for (k_roh = 1; k_roh <= (b_roh - 2); k_roh++) wiersz_roh += "&nbsp;&nbsp;";
+                wiersz_roh += "*";
+                document.write(wiersz_roh + "<br>");
+            }
+
+            var linia2_roh = "";
+            for (i_roh = 1; i_roh <= b_roh; i_roh++) linia2_roh += "*";
+            document.write(linia2_roh + "<br>");
+        </script>
+    </body>
+</html>

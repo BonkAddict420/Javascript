@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <title>Zadanie 56</title>
+    </head>
+
+    <body>
+        <script language="JavaScript">
+            var imie_roh = prompt("Podaj imię:", "");
+            var nazwisko_roh = prompt("Podaj nazwisko:", "");
+            var a_roh = (nazwisko_roh.length % 4) + 5;
+            var b_roh = (imie_roh.length % 6) + 20;
+            document.write("Nazwisko: " + nazwisko_roh + " (" + nazwisko_roh.length + " liter) → a=" + a_roh + "<br>");
+            document.write("Imię: " + imie_roh + " (" + imie_roh.length + " liter) → b=" + b_roh + "<br>");
+
+            var linia_roh = "";
+            for (i_roh = 1; i_roh <= b_roh; i_roh++) linia_roh += "*";
+            document.write(linia_roh + "<br>");
+
+            var wiersz_roh = "*";
+            for (i_roh = 1; i_roh <= (b_roh - 2); i_roh++) {
+                wiersz_roh = wiersz_roh + "&nbsp&nbsp";
+            }
+            wiersz_roh = wiersz_roh + "*";
+            for (i_roh = 1; i_roh <= (a_roh - 2); i_roh++) {
+                document.write(wiersz_roh + "<br>");
+            }
+
+            var linia2_roh = "";
+            for (i_roh = 1; i_roh <= b_roh; i_roh++) linia2_roh += "*";
+            document.write(linia2_roh + "<br>");
+        </script>
+    </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <title>Zadanie 59 - KOD</title>
+    </head>
+
+    <body>
+        <pre>
+            &lt;!DOCTYPE html&gt;
+            &lt;html lang="pl"&gt;
+                &lt;head&gt;
+                    &lt;meta charset="utf-8"&gt;
+                    &lt;title&gt;Zadanie 59&lt;/title&gt;
+                &lt;/head&gt;
+
+                &lt;body&gt;
+                    &lt;div style="color:red;font-size:30px;"&gt;
+                        &lt;script language="JavaScript"&gt;
+                            var numer_roh = 22;
+                            var count_roh = 0;
+                            for (i_roh = numer_roh; i_roh <= numer_roh + 15; i_roh++) {
+                                var pierw2_roh = Math.sqrt(i_roh);
+                                var pierw4_roh = Math.sqrt(pierw2_roh);
+                                document.write("I=" + i_roh + "&lt;br&gt;");
+                                document.write("pierw_2(" + i_roh + ")=" + pierw2_roh.toFixed(2) + "&lt;br&gt;");
+                                document.write("pierw_4(" + i_roh + ")=" + pierw4_roh.toFixed(2) + "&lt;br&gt;");
+                                count_roh++;
+                            }
+                        &lt;/script&gt;
+                    &lt;/div&gt;
+                &lt;/body&gt;
+            &lt;/html&gt;
+        </pre>
+    </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <title>Zadanie 49 - KOD</title>
+    </head>
+
+    <body>
+        <pre>
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+                &lt;head&gt;
+                    &lt;title&gt;Zadanie 49&lt;/title&gt;
+                    &lt;meta charset="utf-8"&gt;
+                &lt;/head&gt;
+
+                &lt;body&gt;
+                    &lt;div style="color:red;font-size:40px;"&gt;
+                        &lt;script language="JavaScript"&gt;
+                            var valid_roh = false;
+                            do {
+                                var a_roh = parseFloat(prompt("Podaj bok a=", ""));
+                                var b_roh = parseFloat(prompt("Podaj bok b=", ""));
+                                var c_roh = parseFloat(prompt("Podaj bok c=", ""));
+                                if ((a_roh > 0) && (b_roh > 0) && (c_roh > 0) && (a_roh + b_roh > c_roh) && (a_roh + c_roh > b_roh) && (c_roh + b_roh > a_roh)) {
+                                    valid_roh = true;
+                                } else {
+                                    alert("Podane boki nie tworzą trójkąta. Podaj ponownie.");
+                                }
+                            } while (!valid_roh);
+                            document.write("Trójkąt o bokach: a=" + a_roh + ", b=" + b_roh + ", c=" + c_roh + " jest prawidłowy&lt;br&gt;");
+                        &lt;/script&gt;
+                    &lt;/div&gt;
+                &lt;/body&gt;
+            &lt;/html&gt;
+        </pre>
+    </body>
+</html>

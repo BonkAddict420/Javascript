@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <title>Zadanie 57 - KOD</title>
+    </head>
+
+    <body>
+        <pre>
+            &lt;!DOCTYPE html&gt;
+            &lt;html lang="pl"&gt;
+                &lt;head&gt;
+                    &lt;meta charset="utf-8"&gt;
+                    &lt;title&gt;Zadanie 57&lt;/title&gt;
+                &lt;/head&gt;
+
+                &lt;body&gt;
+                    &lt;script language="JavaScript"&gt;
+                        var l1_t_roh;
+                        do {
+                            l1_t_roh = parseInt(prompt("Podaj pierwszą liczbę z przedziału &lt;20,60&gt;:", ""));
+                            if (l1_t_roh < 20 || l1_t_roh > 60)
+                                document.write("liczba " + l1_t_roh + " nie należy do przedziału &lt;20,60&gt;&lt;br&gt;");
+                        } while (l1_t_roh < 20 || l1_t_roh > 60);
+
+                        var l2_t_roh;
+                        do {
+                            l2_t_roh = parseInt(prompt("Podaj drugą liczbę z przedziału &lt;20,60&gt;:", ""));
+                            if (l2_t_roh < 20 || l2_t_roh > 60)
+                                document.write("liczba " + l2_t_roh + " nie należy do przedziału &lt;20,60&gt;&lt;br&gt;");
+                        } while (l2_t_roh < 20 || l2_t_roh > 60);
+
+                        var pocz_roh = parseInt(prompt("Podaj wartość początkową wielkości tekstu (px):", ""));
+                        var tekst_roh = prompt("Podaj dowolny tekst:", "");
+
+                        if (l1_t_roh < l2_t_roh) {
+                            for (var i_roh = pocz_roh; i_roh <= 100; i_roh += 5)
+                                document.write("&lt;p style=\"font-size:" + i_roh + "px; color: black;\"&gt;&lt;br&gt;" + tekst_roh + "&lt;br&gt;&lt;/p&gt;");
+                        }
+                        else if (l2_t_roh < l1_t_roh) {
+                            for (var i_roh = pocz_roh; i_roh >= 0; i_roh -= 5)
+                                document.write("&lt;p style=\"font-size:" + i_roh + "px; color: black;\"&gt;&lt;br&gt;" + tekst_roh + "&lt;br&gt;&lt;/p&gt;");
+                        }
+                        else {
+                            document.write("&lt;p style=\"font-size:" + pocz_roh + "px; color: black;\"&gt;&lt;br&gt;" + tekst_roh + "&lt;br&gt;&lt;/p&gt;");
+                        }
+                    &lt;/script&gt;
+                &lt;/body&gt;
+            &lt;/html&gt;
+        </pre>
+    </body>
+</html>

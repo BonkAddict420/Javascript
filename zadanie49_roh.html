@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Zadanie 49</title>
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+        <div style="color:red;font-size:40px;">
+            <script language="JavaScript">
+                var valid_roh = false;
+                do {
+                    var a_roh = parseFloat(prompt("Podaj bok a=", ""));
+                    var b_roh = parseFloat(prompt("Podaj bok b=", ""));
+                    var c_roh = parseFloat(prompt("Podaj bok c=", ""));
+                    if ((a_roh > 0) && (b_roh > 0) && (c_roh > 0) && (a_roh + b_roh > c_roh) && (a_roh + c_roh > b_roh) && (c_roh + b_roh > a_roh)) {
+                        valid_roh = true;
+                    } else {
+                        alert("Podane boki nie tworzą trójkąta. Podaj ponownie.");
+                    }
+                } while (!valid_roh);
+                document.write("Trójkąt o bokach: a=" + a_roh + ", b=" + b_roh + ", c=" + c_roh + " jest prawidłowy<br>");
+            </script>
+        </div>
+    </body>
+</html>

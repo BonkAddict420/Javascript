@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="utf-8">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    h2 {
+      color: red;
+    }
+
+    pre {
+      background: #f5f5f5;
+      border: 1px solid #ccc;
+      padding: 12px;
+      font-size: 14px;
+      border-radius: 4px;
+    }
+
+    .schemat {
+      border: 2px solid black;
+      padding: 12px;
+      display: inline-block;
+      background: #fff;
+      font-family: monospace;
+      font-size: 13px;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    td,
+    th {
+      border: 1px solid #999;
+      padding: 8px 12px;
+    }
+
+    th {
+      background: #ddd;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>1. Pętla for</h2>
+  <table>
+    <tr>
+      <th>Cecha</th>
+      <th>Opis</th>
+    </tr>
+    <tr>
+      <td><b>Nazwa pętli</b></td>
+      <td>Pętla <b>for</b></td>
+    </tr>
+    <tr>
+      <td><b>Konstrukcja</b></td>
+      <td>
+        <pre style="margin:0;">for (inicjalizacja; warunek; inkrementacja) {
+    blok instrukcji;
+}</pre>
+      </td>
+    </tr>
+    <tr>
+      <td><b>Opis</b></td>
+      <td>Pętla for jest stosowana gdy z góry znamy liczbę powtórzeń. Najpierw wykonuje się inicjalizacja zmiennej
+        sterującej, następnie sprawdzany jest warunek - jeśli prawdziwy, wykonuje się blok instrukcji, potem
+        inkrementacja i ponowne sprawdzenie warunku.</td>
+    </tr>
+    <tr>
+      <td><b>Schemat blokowy</b></td>
+      <td>
+        <div class="schemat">
+          [START]<br>
+          ↓<br>
+          inicjalizacja<br>
+          ↓<br>
+          ┌─[warunek?]─────── NIE ──→ [KONIEC]<br>
+          │ ↓ TAK<br>
+          │ blok instrukcji<br>
+          │ ↓<br>
+          │ inkrementacja<br>
+          └─────┘
+        </div>
+      </td>
+    </tr>
+  </table>
+
+  <hr color="red" size="2">
+
+  <h2>2. Pętla while → z kontrolowanym wejściem</h2>
+  <table>
+    <tr>
+      <th>Cecha</th>
+      <th>Opis</th>
+    </tr>
+    <tr>
+      <td><b>Nazwa pętli</b></td>
+      <td>Pętla <b>while</b> (z kontrolowanym wejściem)</td>
+    </tr>
+    <tr>
+      <td><b>Konstrukcja</b></td>
+      <td>
+        <pre style="margin:0;">while (warunek) {
+    blok instrukcji;
+}</pre>
+      </td>
+    </tr>
+    <tr>
+      <td><b>Opis</b></td>
+      <td>Pętla while sprawdza warunek PRZED wykonaniem bloku instrukcji (kontrolowane wejście). Jeśli warunek jest
+        fałszywy już na początku, blok instrukcji nie wykona się ani razu.</td>
+    </tr>
+    <tr>
+      <td><b>Schemat blokowy</b></td>
+      <td>
+        <div class="schemat">
+          [START]<br>
+          ↓<br>
+          ┌─[warunek?]─────── NIE ──→ [KONIEC]<br>
+          │ ↓ TAK<br>
+          │ blok instrukcji<br>
+          └─────┘
+        </div>
+      </td>
+    </tr>
+  </table>
+
+  <hr color="red" size="2">
+
+  <h2>3. Pętla do...while → z kontrolowanym wyjściem</h2>
+  <table>
+    <tr>
+      <th>Cecha</th>
+      <th>Opis</th>
+    </tr>
+    <tr>
+      <td><b>Nazwa pętli</b></td>
+      <td>Pętla <b>do...while</b> (z kontrolowanym wyjściem)</td>
+    </tr>
+    <tr>
+      <td><b>Konstrukcja</b></td>
+      <td>
+        <pre style="margin:0;">do {
+    blok instrukcji;
+} while (warunek);</pre>
+      </td>
+    </tr>
+    <tr>
+      <td><b>Opis</b></td>
+      <td>Pętla do...while sprawdza warunek PO wykonaniu bloku instrukcji (kontrolowane wyjście). Blok zawsze wykona się
+        co najmniej jeden raz, nawet gdy warunek jest od razu fałszywy.</td>
+    </tr>
+    <tr>
+      <td><b>Schemat blokowy</b></td>
+      <td>
+        <div class="schemat">
+          [START]<br>
+          ↓<br>
+          blok instrukcji<br>
+          ↓<br>
+          ┌─[warunek?]─────── NIE ──→ [KONIEC]<br>
+          │<br>
+          └─── TAK ──→ blok instrukcji
+        </div>
+      </td>
+    </tr>
+  </table>
+
+</body>
+
+</html>

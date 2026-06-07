@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Zadanie 51</title>
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+        <div style="color:red;font-size:40px;">
+            <script language="JavaScript">
+                var n_roh = parseInt(prompt("Podaj n=", ""));
+                var silnia_roh = 1;
+                if (n_roh == 0) {
+                    silnia_roh = 1;
+                }
+                else {
+                    for (var i_roh = 1; i_roh <= n_roh; i_roh++) {
+                        silnia_roh = silnia_roh * i_roh;
+                    }
+                }
+                document.write("n=" + n_roh + "<br>");
+                document.write(n_roh + "!=" + silnia_roh + "<br>");
+            </script>
+        </div>
+    </body>
+</html>

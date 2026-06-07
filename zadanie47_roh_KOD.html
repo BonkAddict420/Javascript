@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <title>Zadanie 47 - KOD</title>
+    </head>
+
+    <body>
+        <pre>
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+                &lt;head&gt;
+                    &lt;meta charset="utf-8"&gt;
+                    &lt;title&gt;Zadanie 47&lt;/title&gt;
+                &lt;/head&gt;
+
+                &lt;body&gt;
+                    &lt;script language="JavaScript"&gt;
+                        var ile_razy_roh = 11;
+                        var wielkosc_liter_roh = 42;
+                        document.write("&lt;div style='font-size:20px;'&gt;ilość wykonania pętli = " + ile_razy_roh + "&lt;/div&gt;");
+                        document.write("&lt;div style='font-size:20px;'&gt;wielkość liter = " + wielkosc_liter_roh + "px&lt;/div&gt;");
+                        var dana_roh = parseInt(prompt("Podaj liczbę:", ""));
+                        if (dana_roh % 2 == 0) {
+                            for (var i_roh = 1; i_roh <= ile_razy_roh; i_roh++) {
+                                document.write("&lt;div style='font-size:" + wielkosc_liter_roh + "px; color:blue;'&gt;Rohde&lt;/div&gt;");
+                            }
+                        } else {
+                            for (var i_roh = 1; i_roh <= ile_razy_roh; i_roh++) {
+                                document.write("&lt;div style='font-size:" + wielkosc_liter_roh + "px; color:green;'&gt;Adam&lt;/div&gt;");
+                            }
+                        }
+                    &lt;/script&gt;
+                &lt;/body&gt;
+            &lt;/html&gt;
+        </pre>
+    </body>
+</html>

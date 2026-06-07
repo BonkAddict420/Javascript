@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <title>Zadanie 53 - KOD</title>
+    </head>
+
+    <body>
+        <pre>
+            &lt;!DOCTYPE html&gt;
+            &lt;html lang="pl"&gt;
+                &lt;head&gt;
+                    &lt;meta charset="utf-8"&gt;
+                    &lt;title&gt;Zadanie 53&lt;/title&gt;
+                &lt;/head&gt;
+
+                &lt;body&gt;
+                    &lt;script language="JavaScript"&gt;
+                        var ile_razy_roh = parseInt(prompt("ile razy powtórzyć", ""));
+                        var tekst_roh = prompt("podaj twoje inicjały", "");
+                        for (i_roh = 1; i_roh <= ile_razy_roh; i_roh++) {
+                            for (k_roh = 1; k_roh <= i_roh; k_roh++) {
+                                document.write("&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp");
+                            }
+                            document.write(i_roh + "_" + tekst_roh + "_" + i_roh + "&lt;br&gt;");
+                        }
+                    &lt;/script&gt;
+                &lt;/body&gt;
+            &lt;/html&gt;
+        </pre>
+    </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Zadanie 46</title>
+    </head>
+
+    <body>
+        <script language="JavaScript">
+            var ile_razy_roh = 11;
+            var wielkosc_liter_roh = 42;
+            document.write("<div style='font-size:20px;'>ilość wykonania pętli = " + ile_razy_roh + "</div>");
+            document.write("<div style='font-size:20px;'>wielkość liter = " + wielkosc_liter_roh + "px</div>");
+            for (i_roh = 1; i_roh <= ile_razy_roh; i_roh++) {
+                if (i_roh % 2 != 0) {
+                    document.write("<div style='font-size:" + wielkosc_liter_roh + "px; color:red;'>Rohde</div>");
+                } else {
+                    document.write("<div style='font-size:" + wielkosc_liter_roh + "px; color:blue;'>Adam</div>");
+                }
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <title>Example - Zadanie 53 - KOD</title>
+    </head>
+
+    <body>
+        <pre>
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+                &lt;head&gt;
+                    &lt;title&gt;Zadanie 51&lt;/title&gt;
+                    &lt;meta charset="utf-8"&gt;
+                &lt;/head&gt;
+
+                &lt;body&gt;
+                    &lt;div style="color:red;font-size:40px;"&gt;
+                        &lt;script language="JavaScript"&gt;
+                            var n_roh = parseInt(prompt("Podaj n=", ""));
+                            var silnia_roh = 1;
+                            if (n_roh == 0) {
+                                silnia_roh = 1;
+                            }
+                            else {
+                                for (var i_roh = 1; i_roh <= n_roh; i_roh++) {
+                                    silnia_roh = silnia_roh * i_roh;
+                                }
+                            }
+                            document.write("n=" + n_roh + "&lt;br&gt;");
+                            document.write(n_roh + "!=" + silnia_roh + "&lt;br&gt;");
+                        &lt;/script&gt;
+                    &lt;/div&gt;
+                &lt;/body&gt;
+            &lt;/html&gt;
+        </pre>
+    </body>
+</html>
